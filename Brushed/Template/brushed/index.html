@@ -479,16 +479,54 @@
 				 
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="Bex1Desc">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
-							Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.    
+							<p>This example shows off the ease of Bokeh to create very nice looking charts that are easily interactive.</p>
+							<p>In Bokeh, when you create a plot, instead of bringing up a python windows to display the png of the chart,
+							Bokeh saves the plot to a html file that allows you to interact with the plot through your browser.</p>
+							<p> This specific example is the closing stock prices for a few major companies plotted against each other.</p>
 						</div>
 						<div class="tab-pane fade in" id="Bex1Data">
-							Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.                            
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+							</p> The data for this specific plot was found through Bokeh's easy to access sample data sets. These
+							data sets can be accessed by importing <a href="https://github.com/ContinuumIO/bokeh/tree/master/bokeh/sampledata">bokeh.sampledata</a>.
+							Using bokeh's sample data is a great way to introduce yourself to data visualization because they have examples 
+							for each dataset, however, you can take the data and visualize it in a different way.</p>
 						</div>
 						<div class="tab-pane fade in" id="Bex1Code">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
-							Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.    
+							<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">numpy</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">np</span>
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">bokeh.sampledata.stocks</span> <span style="color: #008800; font-weight: bold">import</span> AAPL, FB, GOOG, IBM, MSFT
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">bokeh.plotting</span> <span style="color: #008800; font-weight: bold">import</span> <span style="color: #333333">*</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">bokehLinePlot</span>():
+	output_file(<span style="background-color: #fff0f0">&quot;stocks.html&quot;</span>, title<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;stocks.py example&quot;</span>)
+
+	hold()
+
+	figure(x_axis_type <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;datetime&quot;</span>, 
+	       tools<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;pan,wheel_zoom,box_zoom,reset,previewsave&quot;</span>)
+	<span style="color: #888888"># easy way to make line chart in bokeh</span>
+	line(np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), AAPL[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#A6CEE3&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;AAPL&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(FB[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), FB[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#1F78B4&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;FB&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(GOOG[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), GOOG[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#B2DF8A&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;GOOG&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(IBM[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), IBM[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#33A02C&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;IBM&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(MSFT[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), MSFT[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#FB9A99&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;MSFT&#39;</span>)
+
+	curplot()<span style="color: #333333">.</span>title <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Stock Closing Prices&quot;</span>
+	grid()<span style="color: #333333">.</span>grid_line_alpha<span style="color: #333333">=</span><span style="color: #6600EE; font-weight: bold">0.3</span>
+
+	aapl <span style="color: #333333">=</span> np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>])
+	aapl_dates <span style="color: #333333">=</span> np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;date&#39;</span>], dtype<span style="color: #333333">=</span>np<span style="color: #333333">.</span>datetime64)
+	<span style="color: #008800; font-weight: bold">return</span> curplot()
+	window_size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">30</span>
+	window <span style="color: #333333">=</span> np<span style="color: #333333">.</span>ones(window_size)<span style="color: #333333">/</span><span style="color: #007020">float</span>(window_size)
+	aapl_avg <span style="color: #333333">=</span> np<span style="color: #333333">.</span>convolve(aapl, window, <span style="background-color: #fff0f0">&#39;same&#39;</span>)
+	show()  <span style="color: #888888"># open a browser</span>
+</pre></div>
+
+
 						</div>
 					</div>
 							
@@ -886,7 +924,13 @@ w4<span style="color: #333333">.</span>addItem(gl)
 		<div class="span6 profileText">
             <h3 class="profile-name">Logan Thomas</h3>
 						
-            <p class="profile-description"><p>If you have any comments or questions or desired tutorials for python please contact me.</p>
+            <p class="profile-description">
+			<p>Data visualization is an art, it is taking complicated Datasets and making easy to read visuals from them.
+			Some overlooked aspects of Data Visualization are getting the data, and simplifying your data. I encourage you to
+			go through the examples above and look in the data tab to see where I got the data and what I did with it. Much of the
+			time you will notice I ignored most of the data. Datasets are usually over saturated with information, instead of making
+			one chart that has way too much information, it is better to make many charts that have little bits of the data.</p>
+			<p>If you have any comments or questions or desired tutorials for python please contact me.</p>
             	
 			<table>
 				<tr>
