@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>URMOM Reference</title>   
+
+<meta name="description" content="This Website is a reference for people who want to learn basic data visualization in python." /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <!-- <div id="logo">
+        	<a id="goUp" href="#home-slider" title="Python Data Visualization">Brushed Template</a>
+        </div> -->
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<!--<li class="current"><a href="#home-slider">Home</a></li>-->
+                <li><a href="#packs">Packages</a></li>
+                <li><a href="#Bokeh">Examples</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+
+<!-- Package Options Section -->
+<div id="packs" class="page-alternate">
+<div class="container">
+		<!-- Title Page -->
+		<div class="row">
+			<div class="span12">
+				<div class="title-page">
+					<h2 class="title">Python Packages</h2>
+					<h3 class="title-description">A Few Popular Packages for Data Visualization. Click the icons to see examples.</h3>
+				</div>
+			</div>
+		</div>
+		<!-- End Title Page -->
+    
+   
+	
+	<!-- Graph Types -->
+	<div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+			<a href="#pqt">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">PyQtGraph Examples</span>
+                </div>
+                <img src="_include/img/profile/qtpy.svg" alt="PyQt">
+            </div>
+			</a>
+            <h3 class="profile-name">PyQtGraph</h3>
+						
+            <p class="profile-description"> <a href="http://www.pyqtgraph.org">PyQtGraph</a> is a python graphics and GUI library intended for mathematics/engineering applications. This Library is very fast due to implimenting numpy for the number crunching. 
+            	
+			<table style="width:100%">
+                <tr>
+                    <td><ins><b>Pros:</b></ins></td>
+                    <td><ins><b>Cons:</b></ins></td>        
+                </tr>
+                <tr>
+                    <td>-Very Fast</td>
+                    <td>-Overly complex</td>
+                </tr>
+                <tr>
+                    <td>-Written entirely in python</td>
+                    <td></td>      
+                </tr>
+            </table>
+
+			<!-- Start Accordion -->
+			<div class="accordion" id="PyQtAccordian">
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#PyQtAccordian" href="#PyQttwoArea">
+						Best Uses
+						<span class="font-icon-arrow-simple-down"></span>
+					</a>
+					</div>
+					<div id="PyQttwoArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							PyQtGraph is best used for visualizing large data sets quickly. It is the fastest package although the lack of a full documentation and 
+							complication makes this package undesirable for simple plots.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#PyQtAccordian" href="#PyQtoneArea">
+							Installation
+							<span class="font-icon-arrow-simple-down"></span>
+						</a>
+					</div>
+					<div id="PyQtoneArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+                                <li><ins><b>Windows:</b></ins> download and run <a href= "Http://www.pyqtgraph.org/downloads/pyqtgraph-0.9.8.win32.exe">the .exe installer</a></li>
+                                <li><ins><b>Mac/Linux:</b></ins> Download the <a href="Http://www.pyqtgraph.org/downloads/pyqtgraph-0.9.8.tar.gz">.tar.gz file</a> and run "python setup.py" from within the directory of the extracted files.</li>
+
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Accordion -->
+			
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="https://github.com/pyqtgraph/pyqtgraph"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+        	<div class="image-wrap">
+				<a href="#Bokeh">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Bokeh Examples</span>
+                </div>
+				</a>
+                <img src="_include/img/profile/bokehicon.svg" alt="Bokeh">
+            </div>
+            <h3 class="profile-name">Bokeh</h3>
+            <p class="profile-description"> <a href="http://bokeh.pydata.org">Bokeh</a> is a python visualization library mainly targeted at modern browsers for presentations. Bokeh quickly creates interactive plots,</p>
+            <table style="width:100%">
+                <tr>
+                    <td><ins><b>Pros:</b></ins></td>
+                    <td><ins><b>Cons:</b></ins></td>        
+                </tr>
+                <tr>
+                    <td>-Widely used and accepted</td>
+                    <td>-Not the fastest</td>      
+                </tr>
+                <tr>
+                    <td>-Well Documented</td>
+                    <td></td>      
+                </tr>
+            </table>
+			<!-- Start Accordion -->
+			<div class="accordion" id="BokAccordian">
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#BokAccordian" href="#BoktwoArea">
+						Best Uses
+						<span class="font-icon-arrow-simple-down"></span>
+					</a>
+					</div>
+					<div id="BoktwoArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							Bokeh is an easy to use library and should be used if having an interactive html result is desired. This means that your plot can be interactive on machines
+							with no Python installed, just send the html file. This feature alone makes Bokeh stand out.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#BokAccordian" href="#BokoneArea">
+							Installation
+							<span class="font-icon-arrow-simple-down"></span>
+						</a>
+					</div>
+					<div id="BokoneArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+                                <li><ins><b>Dependencies:</b></ins>
+                                    <ul>
+                                        <li>NumPy</li>
+                                        <li>Flask</li>
+                                        <li>Redis</li>
+                                        <li>Requests</li>
+                                        <li>gevent</li>
+                                        <li>Pandas</li>
+                                    </ul>
+                                <li><ins><b>From Anaconda:</b></ins>(Recommended) simply run the command: "$ conda install bokeh"</li>
+                                <li><ins><b>From PyPi:</b></ins> Run the command "$ pip install bokeh"</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Accordion -->
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="https://github.com/ContinuumIO/bokeh"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+        	<div class="image-wrap">
+				<a href="#Mpl">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Matplotlib</span>
+                </div>
+				</a>
+                <img src="_include/img/profile/mpl_1.svg" alt="Matplotlib">
+            </div>
+            <h3 class="profile-name">Matplotlib</h3>
+            <p class="profile-description"> <a href="http://www.matplotlib.org" >Matplotlib</a> is the most widely used python 2D plotting library. Matplotlib attempts to mimic the style of MATLAB plots and MATLAB's interface. </p>
+            
+            
+            <table style="width:100%">
+                <tr>
+                    <td><ins><b>Pros:</b></ins></td>
+                    <td><ins><b>Cons:</b></ins></td>        
+                </tr>
+                <tr>
+                    <td>-Widely used and accepted</td>
+                    <td>-Not the fastest</td>      
+                </tr>
+                <tr>
+                    <td>-Well Documented</td>
+                    <td></td>      
+                </tr>
+            </table>
+			<!-- Start Accordion -->
+			<div class="accordion" id="MPLAccordian">
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#MPLAccordian" href="#MPLtwoArea">
+						Best Uses
+						<span class="font-icon-arrow-simple-down"></span>
+					</a>
+					</div>
+					<div id="MPLtwoArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							Matplotlib is the go-to library for python visualization and for good reason. Matplotlib provides quick, easy, and expected plots with great documentation and 
+							a helpful community to back it up. If you are not sure where to start, start with Matplotlib.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading accordionize">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#MPLAccordian" href="#MPLoneArea">
+							Installation
+							<span class="font-icon-arrow-simple-down"></span>
+						</a>
+					</div>
+					<div id="MPLoneArea" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+                                <li><ins><b>Linux:</b></ins> Install through your package manager. Run the command "sudo apt-get install python-matplotlib" (Debian/Ubuntu) or "sudo yum install python-matplotlib" (Fedora/Redhat)</li>
+                                <li><ins><b>Mac:</b></ins> Open terminal and run the command "sudo port install py27-pip" followed by "sudo pip-2.7 install matplotlib"(note if pip already installed the first command can be omitted)</li>
+                                <li><ins><b>Windows:</b></ins>Either run python through <a href="https://www.enthought.com/products/canopy/">Enthought Canopy</a> or <a href="https://store.continuum.io/cshop/anaconda/">Continuum Anaconda</a> (both free) or install from Matplotlib's <a href="https://github.com/matplotlib/matplotlib">Github source code</a></li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Accordion -->
+			
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="https://github.com/matplotlib/matplotlib"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+			<a href="#Nx">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Networkx</span>
+                </div>
+                <img src="_include/img/profile/Nx_1.svg" alt="Joshua Insanus">
+            </div>
+			</a>
+            <h3 class="profile-name">Networkx</h3>
+            <p class="profile-description"> <a href="https://networkx.github.io/" >Networkx</a> is a Python language software package used in the creation and analysis of complex networks. </p>
+            
+            
+            <table style="width:100%">
+                <tr>
+                    <td><ins><b>Pros:</b></ins></td>
+                    <td><ins><b>Cons:</b></ins></td>        
+                </tr>
+                <tr>
+                    <td>-Plots networks</td>
+                    <td>-Requires Matplotlib</td>      
+                </tr>
+                <tr>
+                    <td>-Contains standard graph algorithms</td>
+                    <td>-lack of options for Directed Graphs</td>      
+                </tr>
+                <tr>
+                    <td>-Easy to use</td>
+                    <td></td>
+                </tr>
+            </table>
+				<!-- Start Accordion -->
+        		<div class="accordion" id="NxAccordian">
+					<div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#NxAccordian" href="#NxtwoArea">
+                            Best Uses
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </a>
+                        </div>
+                        <div id="NxtwoArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Networkx is very specialized for use with networks. It can and should be used any time a network needs to be visualized.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#NxAccordian" href="#NxoneArea">
+                                Installation
+                                <span class="font-icon-arrow-simple-down"></span>
+                            </a>
+                        </div>
+                        <div id="NxoneArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+									<li><ins><b>Linux:</b></ins> Install through your package manager. Run the command "sudo apt-get install python-matplotlib" (Debian/Ubuntu) or "sudo yum install python-matplotlib" (Fedora/Redhat)</li>
+									<li><ins><b>Mac:</b></ins> Open terminal and run the command "sudo port install py27-pip" followed by "sudo pip-2.7 install matplotlib"(note if pip already installed the first command can be omitted)</li>
+									<li><ins><b>Windows:</b></ins>Either run python through <a href="https://www.enthought.com/products/canopy/">Enthought Canopy</a> or <a href="https://store.continuum.io/cshop/anaconda/">Continuum Anaconda</a> (both free) or install from Matplotlib's <a href="https://github.com/matplotlib/matplotlib">Github source code</a></li>
+								</ul>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+                <!-- End Accordion -->
+				<div class="social">
+            	<ul class="social-icons">
+                	<li><a href="https://github.com/matplotlib/matplotlib"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+				</div>
+			<!--</div>-->
+			
+            
+        </div>
+        <!-- End Profile -->
+        
+    </div>
+	<!-- End Graph Types -->
+</div>
+</div>
+<!-- End About Section -->
+
+<!-- Begin Bokeh Examples -->
+<div id="Bokeh" class="page">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="title-page">
+					<h2 class="title">Bokeh Examples</h2>
+					<h3 class="title-description">Some popular uses of Bokeh</h3>
+				</div>
+			</div>
+		</div>
+		<!-- Bokeh Ex1 -->
+		<div class="row">
+			<div class="span4">
+				<a href="_include/img/Examples/stocks.html">
+				<div class="image-wrap">
+					<div class="hover-wrap">
+						<span class="overlay-img"></span>
+						<span class="overlay-text-thumb">Bokeh Line Chart</span>
+					</div>
+					<img src="_include/img/Examples/bok_ex1.PNG" alt="Bokeh Line Chart Example.">
+				</div>
+				</a>
+			</div>
+			<div class="span8">
+				
+				<div class="tabbable">
+				
+					<ul class="nav nav-tabs" id="Bex1Table">
+						<li class="active"><a href="#Bex1Desc" data-toggle="tab">Multiple Line Charts</a></li>
+						<li><a href="#Bex1Data" data-toggle="tab">Data</a></li>
+						<li><a href="#Bex1Code" data-toggle="tab">Code</a></li>
+					</ul>
+				 
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="Bex1Desc">
+							<p>This example shows off the ease of Bokeh to create very nice looking charts that are easily interactive.</p>
+							<p>In Bokeh, when you create a plot, instead of bringing up a python windows to display the png of the chart,
+							Bokeh saves the plot to a html file that allows you to interact with the plot through your browser.</p>
+							<p> This specific example is the closing stock prices for a few major companies plotted against each other.</p>
+						</div>
+						<div class="tab-pane fade in" id="Bex1Data">
+							</p> The data for this specific plot was found through Bokeh's easy to access sample data sets. These
+							data sets can be accessed by importing <a href="https://github.com/ContinuumIO/bokeh/tree/master/bokeh/sampledata">bokeh.sampledata</a>.
+							Using bokeh's sample data is a great way to introduce yourself to data visualization because they have examples 
+							for each dataset, however, you can take the data and visualize it in a different way.</p>
+						</div>
+						<div class="tab-pane fade in" id="Bex1Code">
+							<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">numpy</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">np</span>
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">bokeh.sampledata.stocks</span> <span style="color: #008800; font-weight: bold">import</span> AAPL, FB, GOOG, IBM, MSFT
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">bokeh.plotting</span> <span style="color: #008800; font-weight: bold">import</span> <span style="color: #333333">*</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">bokehLinePlot</span>():
+	output_file(<span style="background-color: #fff0f0">&quot;stocks.html&quot;</span>, title<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;stocks.py example&quot;</span>)
+
+	hold()
+
+	figure(x_axis_type <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;datetime&quot;</span>, 
+	       tools<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;pan,wheel_zoom,box_zoom,reset,previewsave&quot;</span>)
+	<span style="color: #888888"># easy way to make line chart in bokeh</span>
+	line(np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), AAPL[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#A6CEE3&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;AAPL&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(FB[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), FB[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#1F78B4&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;FB&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(GOOG[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), GOOG[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#B2DF8A&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;GOOG&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(IBM[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), IBM[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#33A02C&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;IBM&#39;</span>)
+	line(np<span style="color: #333333">.</span>array(MSFT[<span style="background-color: #fff0f0">&#39;date&#39;</span>], <span style="background-color: #fff0f0">&#39;M64&#39;</span>), MSFT[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>],
+	     color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;#FB9A99&#39;</span>, legend<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;MSFT&#39;</span>)
+
+	curplot()<span style="color: #333333">.</span>title <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Stock Closing Prices&quot;</span>
+	grid()<span style="color: #333333">.</span>grid_line_alpha<span style="color: #333333">=</span><span style="color: #6600EE; font-weight: bold">0.3</span>
+
+	aapl <span style="color: #333333">=</span> np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;adj_close&#39;</span>])
+	aapl_dates <span style="color: #333333">=</span> np<span style="color: #333333">.</span>array(AAPL[<span style="background-color: #fff0f0">&#39;date&#39;</span>], dtype<span style="color: #333333">=</span>np<span style="color: #333333">.</span>datetime64)
+	<span style="color: #008800; font-weight: bold">return</span> curplot()
+	window_size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">30</span>
+	window <span style="color: #333333">=</span> np<span style="color: #333333">.</span>ones(window_size)<span style="color: #333333">/</span><span style="color: #007020">float</span>(window_size)
+	aapl_avg <span style="color: #333333">=</span> np<span style="color: #333333">.</span>convolve(aapl, window, <span style="background-color: #fff0f0">&#39;same&#39;</span>)
+	show()  <span style="color: #888888"># open a browser</span>
+</pre></div>
+
+
+						</div>
+					</div>
+							
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--End Bokeh Examples -->
+
+<!-- Begin Networkx Examples -->
+<div id="Nx" class="page-alternate">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="title-page">
+					<h2 class="title">Networkx Examples</h2>
+					<h3 class="title-description">Some popular uses of Networkx</h3>
+				</div>
+			</div>
+		</div>
+		<!-- Bokeh Ex1 -->
+		<div class="row">
+			<div class="item-thumbs span4 design">
+				<a class="hover-wrap fancybox" data-fancybox-group="nx" title="Networkx DiGraph Example" href="_include/img/Examples/Nx_ex1.png">
+					<span class="overlay-img"></span>
+					<span class="overlay-img-thumb font-icon-plus"></span>
+				</a>
+				<img src="_include/img/Examples/Nx_ex1.png" alt="A simple example of the Networkx DiGraph Class.">
+			</div>
+			<div class="span8">
+				<!--<h3 class="spec">Tabs</h3>-->
+				
+				<div class="tabbable">
+				
+					<ul class="nav nav-tabs" id="NxEx1">
+						<li class="active"><a href="#NxEx1Desc" data-toggle="tab">Simple Directed Graph</a></li>
+						<li><a href="#NxEx1Data" data-toggle="tab">Data</a></li>
+						<li><a href="#NxEx1Code" data-toggle="tab">Code</a></li>
+					</ul>
+				 
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="NxEx1Desc">
+							<p>In this example, a simple directed graph is constructed from data made up of strings saying who is friends with who.
+							This example involves nodes, which are people, and links, showing who is friends with who.</p>
+							<p>Directed Graphs can be used in many different applications, whenever the links have the possibility of being one-directional.
+							Friendship is a bit of a cruel example of this (notice Bill is friends with Sue but Sue is not friends with Bill). 
+							Other examples of applications of directed graphs are networks like the world wide web, where a website has a directed edge to another website if there is a link from the website to the other website.</p>
+						</div>
+						<div class="tab-pane fade in" id="NxEx1Data">
+							<p>The data I used for this was completely made up data of a friends group that was saved in a ".txt" file and looked like this:</p>
+							<pre>Bill is friends with Joe,Sue,Mary
+Sue is friends with Joe,Mary
+Joe is friends with Sue,Bill
+Mary is friends with Sue,Bill</pre>
+							<p>This was not the most organized way to keep this code but was used as an example to show that you can parse edges from anything.
+							
+						</div>
+						<div class="tab-pane fade in" id="NxEx1Code">
+							   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">networkx</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">nx</span>
+<span style="color: #888888"># showing a graph in networkx is done through matplotlib</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">plt</span> 
+
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">GraphFriends</span>():
+	friendships <span style="color: #333333">=</span> [] <span style="color: #888888"># initialize empty friendships list</span>
+	f <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&#39;friends.txt&#39;</span>,<span style="background-color: #fff0f0">&#39;r&#39;</span>) <span style="color: #888888"># open data file</span>
+	<span style="color: #008800; font-weight: bold">for</span> line <span style="color: #000000; font-weight: bold">in</span> f<span style="color: #333333">.</span>readlines():
+		<span style="color: #888888"># each line in f.readlines() is of the form &quot;A is friends with B,C,D&quot;</span>
+		line <span style="color: #333333">=</span> line<span style="color: #333333">.</span>split(<span style="background-color: #fff0f0">&#39; is friends with &#39;</span>)<span style="color: #888888"># splits to [A,[B,C,D]]</span>
+		<span style="color: #007020">id</span> <span style="color: #333333">=</span> line[<span style="color: #0000DD; font-weight: bold">0</span>] <span style="color: #888888"># A</span>
+		friends <span style="color: #333333">=</span> line[<span style="color: #0000DD; font-weight: bold">1</span>] <span style="color: #888888"># [B,C,D]</span>
+		<span style="color: #008800; font-weight: bold">for</span> friend <span style="color: #000000; font-weight: bold">in</span> friends<span style="color: #333333">.</span>split(<span style="background-color: #fff0f0">&#39;,&#39;</span>): 
+			friend <span style="color: #333333">=</span> friend<span style="color: #333333">.</span>rstrip()
+			friendships<span style="color: #333333">.</span>append([<span style="color: #007020">id</span>,friend]) <span style="color: #888888"># Appends [A,B],[A,C],[A,D]</span>
+	f<span style="color: #333333">.</span>close() <span style="color: #888888"># close the file that was opened</span>
+	
+	Friends_Graph <span style="color: #333333">=</span> nx<span style="color: #333333">.</span>DiGraph() <span style="color: #888888"># initialize empty Directe Graph</span>
+	Friends_Graph<span style="color: #333333">.</span>add_edges_from(friendships) <span style="color: #888888"># Adds edges from the list that was made</span>
+	nx<span style="color: #333333">.</span>draw(Friends_Graph) <span style="color: #888888"># draw in Networkx</span>
+	plt<span style="color: #333333">.</span>draw() <span style="color: #888888"># draw in matplotlib</span>
+	plt<span style="color: #333333">.</span>show() <span style="color: #888888"># show the plot</span>
+</pre></div>
+ 
+						</div>
+					</div>
+							
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--End Networkx Examples -->
+
+<!-- Begin Matplotlib Examples -->
+<div id="Mpl" class="page">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="title-page">
+					<h2 class="title">Matplotlib Examples</h2>
+					<h3 class="title-description">Some popular uses of Matplotlib</h3>
+				</div>
+			</div>
+		</div>
+		<!-- Bokeh Ex1 -->
+		<div class="row">
+			<div class="item-thumbs span4 design">
+				<a class="hover-wrap fancybox" data-fancybox-group="mpl" title="Matplotlib Bar Plot Example" href="_include/img/Examples/MPL_ex1.png">
+					<span class="overlay-img"></span>
+					<span class="overlay-img-thumb font-icon-plus"></span>
+				</a>
+				<img src="_include/img/Examples/MPL_ex1.png" alt="A simple example of the Matplotlib Bar Plot.">
+			</div>
+			<div class="span8">
+				<!--<h3 class="spec">Tabs</h3>-->
+				
+				<div class="tabbable">
+				
+					<ul class="nav nav-tabs" id="MPLEx1">
+						<li class="active"><a href="#MPLEx1Desc" data-toggle="tab">Stacked Bar Plot</a></li>
+						<li><a href="#MPLEx1Data" data-toggle="tab">Data</a></li>
+						<li><a href="#MPLEx1Code" data-toggle="tab">Code</a></li>
+					</ul>
+				 
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="MPLEx1Desc">
+							<p>In this example I used Matplotlib's bar plot function to show a large dataset, all Olympic athletes. Specifically showing how many medals were won in each age group.</p>
+							<p>In the bar graph, the different colors represent the breakdown of golds,silvers, and bronzes inside the total amount of medals. This was done by using the fact that in matplotlib,
+							the first thing you call to be plotted will be under everything else. So I plotted all medals won as a gold bar plot, then all bronze and silver medals as a silver plot, then all bronze medals
+							as a bronze plot.</p>
+							<p> The library Numpy was also used in this example. Numpy is a widely used python library that allows very fast calculations using numpy-arrays. Whenever you are working with a large data set, 
+							use numpy to speed things up. </p>
+						</div>
+						<div class="tab-pane fade in" id="MPLEx1Data">
+							<p>The data used for this example is a free data-set from <a href="http://www.sports-reference.com/olympics/">Sports Reference</a> who has a large (8618 athlete) dataset for the history of the olympics.</p>
+							<p>This data was already formatted in a .xlsx format though I switched it to a <a href="https://docs.google.com/spreadsheets/d/1sBPnmjGM20bkQJ_WWroE_iBZEqOUcHhEBPqOVEfr3-0/edit?usp=sharing">.csv type</a> to be easily readable in python.
+							The csv was formatted in columns like so:</p>
+							<pre>Athlete,Age,Country,Year,Closing Ceremony Date,Sport,Gold Medals,Silver Medals,Bronze Medals,Total Medals</pre>
+							<p> Although this was way too much information for what I wanted to do so I only payed attention to the Age and the Medals Columns, ignoring 5 columns.</p>
+							<p> There are thousands of free data-sets on-line, this is a great example of one of them but many more can be found in places like <a href="data.gov">data.gov</a>. A word of warning with free data-sets, they often have too much information,
+							such as this case, where we ignored many of the columns, The unnecessary information should be thrown away at the start to reduce memory used.</p>
+						</div>
+						<div class="tab-pane fade in" id="MPLEx1Code">
+							   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">numpy</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">np</span>
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">matplotlib</span> <span style="color: #008800; font-weight: bold">import</span> pyplot <span style="color: #008800; font-weight: bold">as</span> plt
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">PlotOlympicHist</span>():
+	<span style="color: #888888"># first open the file with the data you wish to plot</span>
+	f <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&#39;OlympicAthletes.csv&#39;</span>,<span style="background-color: #fff0f0">&#39;r&#39;</span>)
+	<span style="color: #888888"># numpy includes a useful genfromtxt function which allows you to</span>
+	<span style="color: #888888"># call your data by column</span>
+	data <span style="color: #333333">=</span> np<span style="color: #333333">.</span>genfromtxt(f, delimiter<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;,&#39;</span>,skip_header<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>, 
+                         names<span style="color: #333333">=</span>[<span style="background-color: #fff0f0">&#39;Athlete&#39;</span>,<span style="background-color: #fff0f0">&#39;Age&#39;</span>,<span style="background-color: #fff0f0">&#39;Country&#39;</span>,<span style="background-color: #fff0f0">&#39;Year&#39;</span>,
+                                <span style="background-color: #fff0f0">&#39;Closing Ceremony Date&#39;</span>,<span style="background-color: #fff0f0">&#39;Sport&#39;</span>,
+                                <span style="background-color: #fff0f0">&#39;Gold&#39;</span>,<span style="background-color: #fff0f0">&#39;Silver&#39;</span>,<span style="background-color: #fff0f0">&#39;Bronze&#39;</span>,<span style="background-color: #fff0f0">&#39;Total&#39;</span>])
+	<span style="color: #888888"># initializing the bins for the histogram, a span of the ages</span>
+	bins <span style="color: #333333">=</span> np<span style="color: #333333">.</span>arange(<span style="color: #007020">min</span>(data[<span style="background-color: #fff0f0">&#39;Age&#39;</span>]),<span style="color: #007020">max</span>(data[<span style="background-color: #fff0f0">&#39;Age&#39;</span>])<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>)
+	<span style="color: #888888"># close files after you read the data</span>
+	f<span style="color: #333333">.</span>close()
+	<span style="color: #888888"># initialize arrays for Golds/Silvers/Bronzes</span>
+	Golds<span style="color: #333333">=</span>[]
+	Silvers<span style="color: #333333">=</span>[]
+	Bronzes<span style="color: #333333">=</span>[]
+	<span style="color: #008800; font-weight: bold">for</span> age <span style="color: #000000; font-weight: bold">in</span> bins:
+		<span style="color: #888888"># fill each array with the total amount of medals won by people</span>
+		<span style="color: #888888"># of that age</span>
+		age_golds <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;Gold&#39;</span>][data[<span style="background-color: #fff0f0">&#39;Age&#39;</span>]<span style="color: #333333">==</span><span style="color: #007020">int</span>(age)]
+		age_silvers <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;Silver&#39;</span>][data[<span style="background-color: #fff0f0">&#39;Age&#39;</span>]<span style="color: #333333">==</span><span style="color: #007020">int</span>(age)]
+		age_bronzes <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;Bronze&#39;</span>][data[<span style="background-color: #fff0f0">&#39;Age&#39;</span>]<span style="color: #333333">==</span><span style="color: #007020">int</span>(age)]
+		Golds<span style="color: #333333">.</span>append(<span style="color: #007020">sum</span>(age_golds))
+		Silvers<span style="color: #333333">.</span>append(<span style="color: #007020">sum</span>(age_silvers))
+		Bronzes<span style="color: #333333">.</span>append(<span style="color: #007020">sum</span>(age_bronzes))
+		
+	<span style="color: #888888"># matplotlib allows you to change xlabel, ylabel, and title with these commands</span>
+	plt<span style="color: #333333">.</span>xlabel(<span style="background-color: #fff0f0">&#39;Age&#39;</span>)
+	plt<span style="color: #333333">.</span>ylabel(<span style="background-color: #fff0f0">&#39;Total Medals Won&#39;</span>)
+	plt<span style="color: #333333">.</span>title(<span style="background-color: #fff0f0">&#39;Total Medals Won Vs Age of Athlete&#39;</span>)
+	
+	<span style="color: #888888"># using a bar plot to show how many medals were won by each age group</span>
+	plt<span style="color: #333333">.</span>bar(bins,np<span style="color: #333333">.</span>add(np<span style="color: #333333">.</span>add(Golds,Bronzes),Silvers),color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;#E6B800&quot;</span>)
+	plt<span style="color: #333333">.</span>bar(bins,np<span style="color: #333333">.</span>add(Silvers,Bronzes),color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;#999999&quot;</span>)
+	plt<span style="color: #333333">.</span>bar(bins,Bronzes,color<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;#993D00&quot;</span>)
+	plt<span style="color: #333333">.</span>grid(<span style="color: #007020">True</span>)
+	plt<span style="color: #333333">.</span>show()
+</pre></div>
+
+
+
+ 
+						</div>
+					</div>
+							
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--End Matplotlib Examples -->
+
+<!-- Begin PyQtGraph Examples -->
+<div id="pqt" class="page-alternate">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="title-page">
+					<h2 class="title">PyQtGraph Examples</h2>
+					<h3 class="title-description">Some popular uses of PyQtGraph</h3>
+				</div>
+			</div>
+		</div>
+		<!-- PQT Ex1 -->
+		<div class="row">
+			<div class="item-thumbs span4 design">
+				<a class="hover-wrap fancybox" data-fancybox-group="pqt" title="PyQt ScatterPlot Example" href="_include/img/Examples/pyqt_ex1.PNG">
+					<span class="overlay-img"></span>
+					<span class="overlay-img-thumb font-icon-plus"></span>
+				</a>
+				<img src="_include/img/Examples/pyqt_ex1.PNG" alt="An Example of the PyQt ScatterPlot">
+			</div>
+			<div class="span8">
+				<!--<h3 class="spec">Tabs</h3>-->
+				
+				<div class="tabbable">
+				
+					<ul class="nav nav-tabs" id="PQTEx1">
+						<li class="active"><a href="#PQTEx1Desc" data-toggle="tab">Multiple Scatter Plots</a></li>
+						<li><a href="#PQTEx1Data" data-toggle="tab">Data</a></li>
+						<li><a href="#PQTEx1Code" data-toggle="tab">Code</a></li>
+					</ul>
+				 
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="PQTEx1Desc">
+							<p> In this example I used PyQtGraph's ScatterPlotItem() Class which behaves as a normal Scatter Plot should.
+							The Plus side for PyQtGraph is that it is fast and deals very well with large Datasets. For this reason I 
+							used two large datasets (described in the data tab). Making 4 scatter-plots with the datasets, each scatter plot
+							comparing 2 variables (x and y axis) and a third using the color of the nodes.</p>
+							<p> The left column of scatter plots are Red Wine comparisons and the Right Column are white wine comparisons. 
+							The top plots are pH vs Alcohol content and the bottom plots are Residual sugar vs Density. All of the nodes
+							are colored according to their quality rating, the scale can be seen in the bottom right graph.</p>
+						</div>
+						<div class="tab-pane fade in" id="PQTEx1Data">
+							<p> The data used in this plot are large data-sets downloaded from <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/">UCI's machine learning database</a>,
+							they are two datasets, preformatted in csv form. One set is red wine(~1600 entries), one set is white wine(~4900 entries). Both sets are similarly formated into columns according to :</p>
+							<pre>"fixed acidity";"volatile acidity";"citric acid";"residual sugar";"chlorides";"free sulfur dioxide";"total sulfur dioxide";"density";"pH";"sulphates";"alcohol";"quality"</pre>
+							<p> <a href="http://archive.ics.uci.edu/ml/">UCI</a> is another place on the internet to get great sets of data for free. This particular set allowed me to compare different qualities 
+							of red and white wine to the rating to look at trends. Note that in this example, there were many different comparisons I could have made between qualities. The top comparison seems
+							to be a decent comparison because we see a clear trend in rating as we go to higher pH/alchohol content. The bottom plots seem to be poor comparisons because there is no real trend 
+							going on.</p>
+							<p>Sometimes when you have large sets of data with many different qualities it requires you to hunt around and try some different comparisons or plot types before you get one that has a significant trend.</p>
+						</div>
+						<div class="tab-pane fade in" id="PQTEx1Code">
+							  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">pyqtgraph.Qt</span> <span style="color: #008800; font-weight: bold">import</span> QtGui, QtCore
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">pyqtgraph</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">pg</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">numpy</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">np</span>
+
+<span style="color: #888888"># Open(and close)Both Files and read info, similarly formatted datasets</span>
+f <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&#39;winequality-red.csv&#39;</span>,<span style="background-color: #fff0f0">&#39;r&#39;</span>)
+data <span style="color: #333333">=</span> np<span style="color: #333333">.</span>genfromtxt(f,delimiter<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;;&#39;</span>, skip_header<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,
+                     names<span style="color: #333333">=</span>[<span style="background-color: #fff0f0">&quot;fixed acidity&quot;</span>,<span style="background-color: #fff0f0">&quot;volatile acidity&quot;</span>,<span style="background-color: #fff0f0">&quot;citric acid&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;residual sugar&quot;</span>,<span style="background-color: #fff0f0">&quot;chlorides&quot;</span>,<span style="background-color: #fff0f0">&quot;free sulfur dioxide&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;total sulfur dioxide&quot;</span>,<span style="background-color: #fff0f0">&quot;density&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;pH&quot;</span>,<span style="background-color: #fff0f0">&quot;sulphates&quot;</span>,<span style="background-color: #fff0f0">&quot;alcohol&quot;</span>,<span style="background-color: #fff0f0">&quot;quality&quot;</span>])
+f<span style="color: #333333">.</span>close()
+f2 <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&#39;winequality-white.csv&#39;</span>,<span style="background-color: #fff0f0">&#39;r&#39;</span>)
+data2 <span style="color: #333333">=</span> np<span style="color: #333333">.</span>genfromtxt(f2,delimiter<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;;&#39;</span>, skip_header<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,
+                     names<span style="color: #333333">=</span>[<span style="background-color: #fff0f0">&quot;fixed acidity&quot;</span>,<span style="background-color: #fff0f0">&quot;volatile acidity&quot;</span>,<span style="background-color: #fff0f0">&quot;citric acid&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;residual sugar&quot;</span>,<span style="background-color: #fff0f0">&quot;chlorides&quot;</span>,<span style="background-color: #fff0f0">&quot;free sulfur dioxide&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;total sulfur dioxide&quot;</span>,<span style="background-color: #fff0f0">&quot;density&quot;</span>,
+                            <span style="background-color: #fff0f0">&quot;pH&quot;</span>,<span style="background-color: #fff0f0">&quot;sulphates&quot;</span>,<span style="background-color: #fff0f0">&quot;alcohol&quot;</span>,<span style="background-color: #fff0f0">&quot;quality&quot;</span>])
+f2<span style="color: #333333">.</span>close
+<span style="color: #888888"># initialize the PyQt Gui</span>
+app <span style="color: #333333">=</span> QtGui<span style="color: #333333">.</span>QApplication([])
+mw <span style="color: #333333">=</span> QtGui<span style="color: #333333">.</span>QMainWindow()
+mw<span style="color: #333333">.</span>resize(<span style="color: #0000DD; font-weight: bold">800</span>,<span style="color: #0000DD; font-weight: bold">800</span>)
+view <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>GraphicsLayoutWidget() 
+mw<span style="color: #333333">.</span>setCentralWidget(view)
+mw<span style="color: #333333">.</span>show()
+mw<span style="color: #333333">.</span>setWindowTitle(<span style="background-color: #fff0f0">&#39;Wine Plots&#39;</span>)
+
+<span style="color: #888888">## create four areas to add plots</span>
+w1 <span style="color: #333333">=</span> view<span style="color: #333333">.</span>addPlot(title <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;pH vs alcohol in red Wines&quot;</span>)
+w2 <span style="color: #333333">=</span> view<span style="color: #333333">.</span>addPlot(title <span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;pH vs alcohol in white Wines&quot;</span>)
+view<span style="color: #333333">.</span>nextRow()
+w3 <span style="color: #333333">=</span> view<span style="color: #333333">.</span>addPlot(title <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;residual Sugar vs Density in red Wines&quot;</span>)
+w4 <span style="color: #333333">=</span> view<span style="color: #333333">.</span>addPlot(title <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;residual Sugar vs Density in white Wines&quot;</span>)
+<span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Generating data, this takes a few seconds...&quot;</span>)
+
+<span style="color: #888888">## 1: pH vs Alcohol red wines  (color = quality)</span>
+s1 <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>ScatterPlotItem(size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>,pxMode<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+spots1 <span style="color: #333333">=</span> []
+n <span style="color: #333333">=</span> <span style="color: #007020">len</span>(data[<span style="background-color: #fff0f0">&#39;alcohol&#39;</span>])
+x_var1 <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;alcohol&#39;</span>]
+y_var1 <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;pH&#39;</span>]
+scale <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;quality&#39;</span>]
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(n):
+	spots1<span style="color: #333333">.</span>append({<span style="background-color: #fff0f0">&#39;pos&#39;</span>:(x_var1[i],y_var1[i]),
+	               <span style="background-color: #fff0f0">&#39;brush&#39;</span>:pg<span style="color: #333333">.</span>intColor(scale[i]<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">10</span>,<span style="color: #0000DD; font-weight: bold">100</span>)})
+s1<span style="color: #333333">.</span>addPoints(spots1)
+w1<span style="color: #333333">.</span>addItem(s1)
+
+<span style="color: #888888">## 2: pH vs Alcohol  white(color = quality)</span>
+s2 <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>ScatterPlotItem(size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>,pxMode<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+spots2 <span style="color: #333333">=</span> []
+n <span style="color: #333333">=</span> <span style="color: #007020">len</span>(data2[<span style="background-color: #fff0f0">&#39;alcohol&#39;</span>])
+x_var2 <span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;alcohol&#39;</span>]
+y_var2<span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;pH&#39;</span>]
+scale2 <span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;quality&#39;</span>]
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(n):
+	spots2<span style="color: #333333">.</span>append({<span style="background-color: #fff0f0">&#39;pos&#39;</span>:(x_var2[i],y_var2[i]),
+	               <span style="background-color: #fff0f0">&#39;brush&#39;</span>:pg<span style="color: #333333">.</span>intColor(scale2[i]<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">10</span>,<span style="color: #0000DD; font-weight: bold">100</span>)})
+s2<span style="color: #333333">.</span>addPoints(spots2)
+w2<span style="color: #333333">.</span>addItem(s2)
+
+<span style="color: #888888">## 3: pH vs Alcohol  red(color = quality)</span>
+s3 <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>ScatterPlotItem(size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>,pxMode<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+spots3 <span style="color: #333333">=</span> []
+n <span style="color: #333333">=</span> <span style="color: #007020">len</span>(data[<span style="background-color: #fff0f0">&#39;residual_sugar&#39;</span>])
+x_var3 <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;density&#39;</span>]
+y_var3<span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;residual_sugar&#39;</span>]
+scale3 <span style="color: #333333">=</span> data[<span style="background-color: #fff0f0">&#39;quality&#39;</span>]
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(n):
+	spots3<span style="color: #333333">.</span>append({<span style="background-color: #fff0f0">&#39;pos&#39;</span>:(x_var3[i],y_var3[i]),
+	               <span style="background-color: #fff0f0">&#39;brush&#39;</span>:pg<span style="color: #333333">.</span>intColor(scale3[i]<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">10</span>,<span style="color: #0000DD; font-weight: bold">100</span>)})
+s3<span style="color: #333333">.</span>addPoints(spots3)
+w3<span style="color: #333333">.</span>addItem(s3)
+
+<span style="color: #888888">## 4: pH vs Alcohol  whites(color = quality)</span>
+s4 <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>ScatterPlotItem(size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>,pxMode<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+spots4 <span style="color: #333333">=</span> []
+n <span style="color: #333333">=</span> <span style="color: #007020">len</span>(data2[<span style="background-color: #fff0f0">&#39;residual_sugar&#39;</span>])
+x_var4 <span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;density&#39;</span>]
+y_var4<span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;residual_sugar&#39;</span>]
+scale4 <span style="color: #333333">=</span> data2[<span style="background-color: #fff0f0">&#39;quality&#39;</span>]
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(n):
+	spots4<span style="color: #333333">.</span>append({<span style="background-color: #fff0f0">&#39;pos&#39;</span>:(x_var4[i],y_var4[i]),
+	               <span style="background-color: #fff0f0">&#39;brush&#39;</span>:pg<span style="color: #333333">.</span>intColor(scale4[i]<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">10</span>,<span style="color: #0000DD; font-weight: bold">100</span>)})
+s4<span style="color: #333333">.</span>addPoints(spots4)
+w4<span style="color: #333333">.</span>addItem(s4)
+gl <span style="color: #333333">=</span> pg<span style="color: #333333">.</span>GradientLegend((<span style="color: #0000DD; font-weight: bold">10</span>,<span style="color: #0000DD; font-weight: bold">100</span>),(<span style="color: #0000DD; font-weight: bold">300</span>,<span style="color: #0000DD; font-weight: bold">10</span>))
+gl<span style="color: #333333">.</span>setIntColorScale(<span style="color: #0000DD; font-weight: bold">0</span>,<span style="color: #0000DD; font-weight: bold">100</span>)
+gl<span style="color: #333333">.</span>scale(<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>)
+w4<span style="color: #333333">.</span>addItem(gl)
+
+<span style="color: #888888">## Start Qt event loop unless running in interactive mode.</span>
+<span style="color: #008800; font-weight: bold">if</span> __name__ <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&#39;__main__&#39;</span>:
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">sys</span>
+    <span style="color: #008800; font-weight: bold">if</span> (sys<span style="color: #333333">.</span>flags<span style="color: #333333">.</span>interactive <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #000000; font-weight: bold">or</span> <span style="color: #000000; font-weight: bold">not</span> <span style="color: #007020">hasattr</span>(QtCore, <span style="background-color: #fff0f0">&#39;PYQT_VERSION&#39;</span>):
+        QtGui<span style="color: #333333">.</span>QApplication<span style="color: #333333">.</span>instance()<span style="color: #333333">.</span>exec_()
+</pre></div>
+						</div>
+					</div>
+							
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--End PyqtGraph Examples -->
+
+
+<!-- Contact -->
+<div id="Contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Contact Me</h2>
+               <!-- <h3 class="title-description">Learn Who I am and what I like to do.</h3>-->
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+   
+	
+	<!-- Graph Types -->
+	<div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <!-- <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">CTO/Founder</span>
+                </div> -->
+                <img src="_include/img/profile/me_color_ear.svg" alt="Logan Thomas">
+            </div>
+		</div>
+		<div class="span6 profileText">
+            <h3 class="profile-name">Logan Thomas</h3>
+						
+            <p class="profile-description">
+			<p>Data visualization is an art, it is taking complicated Datasets and making easy to read visuals from them.
+			Some overlooked aspects of Data Visualization are getting the data, and simplifying your data. I encourage you to
+			go through the examples above and look in the data tab to see where I got the data and what I did with it. Much of the
+			time you will notice I ignored most of the data. Datasets are usually over saturated with information, instead of making
+			one chart that has way too much information, it is better to make many charts that have little bits of the data.</p>
+			<p>If you have any comments or questions or desired tutorials for python please contact me.</p>
+            	
+			<table>
+				<tr>
+					<td>Email:</td>
+					<td>Lathomas42@gmail.com</td>
+				<tr>
+			</table>
+			<div class="social">
+            	<ul class="social-icons">
+                	<li><a href="https://github.com/Lathomas42"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        
+    </div>
+	<!-- End Graph Types -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="PythonDataVisualization">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>
